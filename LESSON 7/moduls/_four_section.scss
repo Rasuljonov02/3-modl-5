@@ -1,0 +1,101 @@
+@use "./function.scss";
+
+.tiket {
+	margin-top: 100px;
+	text-align: center;
+	position: relative;
+	.p {
+		@include function.size(#fafafb, roboto, 44px, 700);
+		line-height: 100px;
+	}
+	p {
+		@include function.fon(#a5a6a7, 16px, 400);
+	}
+	img {
+		position: absolute;
+		right: 0;
+		bottom: -150px;
+	}
+}
+.regular {
+	display: flex;
+	justify-content: space-around;
+	margin: 150px;
+ margin-top: 80px;
+	.musik {
+		display: flex;
+		flex-direction: column;
+		border-radius: 24px;
+		background: #1b1f20;
+		width: 370px;
+		height: 458px;
+		gap: 30px;
+		// justify-content: space-between;
+
+		padding: 20px;
+		text-align: center;
+		span {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			align-items: start;
+		}
+		h5 {
+			@include function.fon(#fff, 14px, 500);
+			border-radius: 100px;
+			background: #333;
+			width: 150px;
+			text-align: center;
+			margin-left: 100px;
+			padding: 15px 5px;
+			margin-top: 20px;
+		}
+		h2 {
+			@include function.fon(#f4f4f4, 28px, 700);
+		}
+		p {
+			@include function.fon(#a5a6a7, 16px, 400);
+			display: flex;
+			gap: 2px;
+		}
+		.now,
+		.now3 {
+			// @include fon(#fff, 15px, 500);
+			color: #fff;
+			font-family: Roboto;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			border-radius: 100px;
+			background: #2d3132;
+			padding: 10px;
+		}
+		.now2 {
+			border-radius: 100px;
+			color: #111617;
+			font-family: Roboto;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			padding: 10px;
+			background: linear-gradient(86deg, #00fce3 0%, #00d6fa 100%);
+		}
+		.refgy {
+			padding: 10px 5px;
+			border-radius: 100px;
+			background: #fff;
+			color: #111617;
+			font-family: Roboto;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+}

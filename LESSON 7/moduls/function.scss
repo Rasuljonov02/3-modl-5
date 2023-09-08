@@ -1,0 +1,17 @@
+@mixin size($color,$font, $size, $weight) {
+	color: $color;
+	font-family: $font;
+	font-size: $size;
+	font-style: normal;
+	font-weight: $weight;
+}
+
+@mixin size_2($color, $size, $weitht) {
+	color: $color;
+	font-family: Roboto;
+	font-size: $color;
+	font-style: normal;
+	font-weight: $weitht;
+	line-height: normal;
+}
+
